@@ -47,15 +47,54 @@
         </div>
         <div class="surveyRow">
             <div class="labels">
+                <label></label>
+            </div>
+            <div class="inputs">
+                <select id="dropdown">
+                    <option disabled>Select Option</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="surveyRow">
+            <div class="labels">
                 <label>How likely are you to accept a location tracker: </label>
             </div>
             <div class="inputs">
-                <input type="radio" class="radio" id="likely" name="location" value="Likely">
-                <label for="likely">Likely</label>
-                <input type="radio" class="radio" id="unlikely" name="location" value="Unlikely">
-                <label for="unlikely">Unlikely</label>
-                <input type="radio" class="radio" id="die first" name="location" value="Die first">
-                <label for="die first">Die first</label>
+                <input type="radio" class="radio" id="likely" name="feeling" value="Likely">
+                <label class="selectLabel" for="likely">Likely</label>
+                <input type="radio" class="radio" id="unlikely" name="feeling" value="Unlikely">
+                <label class="selectLabel" for="unlikely">Unlikely</label>
+                <input type="radio" class="radio" id="die first" name="feeling" value="Die first">
+                <label class="selectLabel" for="die first">Die first</label>
+            </div>
+        </div>
+        <div class="surveyRow">
+            <div class="labels">
+                <label>Please select all that apply to your super powers:</label>
+            </div>
+            <div class="inputs">
+                <label class="selectLabel" for="superStrength"><input id="superStrength" type="checkbox" class="checkbox" name="powers"> Super Strength</label>
+                <label class="selectLabel" for="healingFactor"><input id="healingFactor" type="checkbox" class="checkbox" name="powers"> Healing Factor</label>
+                <label class="selectLabel" for="superSpeed"><input id="superSpeed" type="checkbox" class="checkbox" name="powers"> Super Speed</label>
+                <label class="selectLabel" for="forceField"><input id="forceField" type="checkbox" class="checkbox" name="powers"> Force Field</label>
+                <label class="selectLabel" for="timeTravel"><input id="timeTravel" type="checkbox" class="checkbox" name="powers"> Time Travel</label>
+                <label class="selectLabel" for="telekinesis"><input id="telekinesis" type="checkbox" class="checkbox" name="powers"> Telekinesis</label>
+                <label class="selectLabel" for="telepathy"><input id="telepathy" type="checkbox" class="checkbox" name="powers"> Telepathy</label>
+                <label class="selectLabel" for="elementalControl"><input id="elementalControl" type="checkbox" class="checkbox" name="powers"> Elemental Control</label>
+                <label class="selectLabel" for="flight"><input id="flight" type="checkbox" class="checkbox" name="powers"> FLight</label>
+                <label class="selectLabel" for="teleportation"><input id="teleportation" type="checkbox" class="checkbox" name="powers"> Teleportation</label>
+                <label class="selectLabel" for="invulnerability"><input id="invulnerability" type="checkbox" class="checkbox" name="powers"> Invulnerability</label>
+            </div>
+        </div>
+        <div class="surveyRow">
+            <div class="labels">
+                <label></label>
+            </div>
+            <div class="inputs">
+
             </div>
         </div>
         <div>
@@ -68,13 +107,12 @@
 </html>
 
 <!--To Complete-->
-<!--User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
-<!--User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
-<!--User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.-->
-<!--User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".-->
+
+
+
 <!--User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.-->
 <!--User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.-->
-<!--User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.-->
+<!--User Story #15: Inside the form element, I am presented with a textarea at the end  additional comments.-->
 
 
 <!--Done-->
@@ -84,6 +122,10 @@
 <!--User Story #3: I can see a form with id="survey-form".-->
 <!--User Story #4: Inside the form element, I am required to enter my name in a field with id="name".-->
 <!--User Story #5: Inside the form element, I am required to enter an email in a field with id="email".-->
+<!--User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
+<!--User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
+<!--User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.-->
 <!--User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".-->
-<!--User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.-->
+<!--User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions  each field.-->
+<!--User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".-->
 <!--User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.-->

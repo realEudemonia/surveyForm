@@ -10,6 +10,10 @@ input{
     width: 80%;
 }
 
+select{
+    height: 25px;
+}
+
 .surveyRow {
     margin: auto;
     width: 100%;
@@ -30,9 +34,17 @@ input{
     padding: 10px 20px;
 }
 
+.selectLabel{
+
+}
+
 .radio {
     vertical-align: middle;
     text-align: left;
+}
+
+.checkbox{
+
 }
 
 #survey-container {
