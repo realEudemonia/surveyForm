@@ -18,7 +18,7 @@
                 <label id="name-label">*Name:</label>
             </div>
             <div class="inputs">
-                <input id="name" type="text" placeholder="Name" autofocus required><br>
+                <input class="textInput" id="name" type="text" placeholder="Name" autofocus required><br>
             </div>
         </div>
         <div class="surveyRow">
@@ -26,7 +26,7 @@
                 <label>*Alias:</label>
             </div>
             <div class="inputs">
-                <input type="text" placeholder="Alias" required><br>
+                <input class="textInput" type="text" placeholder="Alias" required><br>
             </div>
         </div>
         <div class="surveyRow">
@@ -34,7 +34,7 @@
                 <label id="number-label">Age:</label>
             </div>
             <div class="inputs">
-                <input id="number" type="number" placeholder="Age" min="20" max="500"><br>
+                <input class="textInput" id="number" type="number" placeholder="Age" min="20" max="500"><br>
             </div>
         </div>
         <div class="surveyRow">
@@ -42,12 +42,12 @@
                 <label id="email-label">*Email:</label>
             </div>
             <div class="inputs">
-                <input id="email" type="email" placeholder="Email" required><br>
+                <input class="textInput" id="email" type="email" placeholder="Email" required><br>
             </div>
         </div>
         <div class="surveyRow">
             <div class="labels">
-                <label></label>
+                <label for="dropdown"></label>
             </div>
             <div class="inputs">
                 <select id="dropdown">
@@ -63,38 +63,77 @@
                 <label>How likely are you to accept a location tracker: </label>
             </div>
             <div class="inputs">
-                <input type="radio" class="radio" id="likely" name="feeling" value="Likely">
-                <label class="selectLabel" for="likely">Likely</label>
-                <input type="radio" class="radio" id="unlikely" name="feeling" value="Unlikely">
-                <label class="selectLabel" for="unlikely">Unlikely</label>
-                <input type="radio" class="radio" id="die first" name="feeling" value="Die first">
-                <label class="selectLabel" for="die first">Die first</label>
+                <div class="checkSelect">
+                    <input type="radio" class="clickSelector" id="likely" name="feeling" value="Likely">
+                    <label for="likely">Likely</label>
+                </div>
+                <div class="checkSelect">
+                    <input type="radio" class="clickSelector" id="unlikely" name="feeling" value="Unlikely">
+                    <label for="unlikely">Unlikely</label>
+                </div>
+                <div class="checkSelect">
+                    <input type="radio" class="clickSelector" id="die first" name="feeling" value="Die first">
+                    <label for="die first">Die first</label>
+                </div>
             </div>
         </div>
         <div class="surveyRow">
             <div class="labels">
-                <label>Please select all that apply to your super powers:</label>
+                <label>Please select all that apply to describe your super powers:</label>
             </div>
             <div class="inputs">
-                <label class="selectLabel" for="superStrength"><input id="superStrength" type="checkbox" class="checkbox" name="powers"> Super Strength</label>
-                <label class="selectLabel" for="healingFactor"><input id="healingFactor" type="checkbox" class="checkbox" name="powers"> Healing Factor</label>
-                <label class="selectLabel" for="superSpeed"><input id="superSpeed" type="checkbox" class="checkbox" name="powers"> Super Speed</label>
-                <label class="selectLabel" for="forceField"><input id="forceField" type="checkbox" class="checkbox" name="powers"> Force Field</label>
-                <label class="selectLabel" for="timeTravel"><input id="timeTravel" type="checkbox" class="checkbox" name="powers"> Time Travel</label>
-                <label class="selectLabel" for="telekinesis"><input id="telekinesis" type="checkbox" class="checkbox" name="powers"> Telekinesis</label>
-                <label class="selectLabel" for="telepathy"><input id="telepathy" type="checkbox" class="checkbox" name="powers"> Telepathy</label>
-                <label class="selectLabel" for="elementalControl"><input id="elementalControl" type="checkbox" class="checkbox" name="powers"> Elemental Control</label>
-                <label class="selectLabel" for="flight"><input id="flight" type="checkbox" class="checkbox" name="powers"> FLight</label>
-                <label class="selectLabel" for="teleportation"><input id="teleportation" type="checkbox" class="checkbox" name="powers"> Teleportation</label>
-                <label class="selectLabel" for="invulnerability"><input id="invulnerability" type="checkbox" class="checkbox" name="powers"> Invulnerability</label>
+                <div class="checkSelect">
+                    <input id="superStrength" type="checkbox" class="clickSelector" name="powers">
+                    <label for="superStrength">Super Strength</label>
+                </div>
+                <div class="checkSelect">
+                    <input id="healingFactor" type="checkbox" class="clickSelector" name="powers">
+                    <label for="healingFactor">Healing Factor</label>
+                </div>
+                <div class="checkSelect">
+                    <input id="superSpeed" type="checkbox" class="clickSelector" name="powers">
+                    <label for="superSpeed"> Super Speed</label>
+                </div>
+                <div class="checkSelect">
+                    <input id="forceField" type="checkbox" class="clickSelector" name="powers">
+                    <label for="forceField"> Force Field</label>
+                </div>
+                <div class="checkSelect">
+                    <input id="timeTravel" type="checkbox" class="clickSelector" name="powers">
+                    <label for="timeTravel"> Time Travel</label>
+                </div>
+                <div class="checkSelect">
+                    <input id="telekinesis" type="checkbox" class="clickSelector" name="powers">
+                    <label for="telekinesis"> Telekinesis</label>
+                </div>
+                <div class="checkSelect">
+                    <input id="telepathy" type="checkbox" class="clickSelector" name="powers">
+                    <label for="telepathy"> Telepathy</label>
+                </div>
+                <div class="checkSelect">
+                    <input id="elementalControl" type="checkbox" class="clickSelector" name="powers">
+                    <label for="elementalControl"> Elemental Control</label>
+                </div>
+                <div class="checkSelect">
+                    <input id="flight" type="checkbox" class="clickSelector" name="powers">
+                    <label for="flight"> Flight</label>
+                </div>
+                <div class="checkSelect">
+                    <input id="teleportation" type="checkbox" class="clickSelector" name="powers">
+                    <label for="teleportation"> Teleportation</label>
+                </div>
+                <div class="checkSelect">
+                    <input id="invulnerability" type="checkbox" class="clickSelector" name="powers">
+                    <label for="invulnerability"> Invulnerability</label>
+                </div>
             </div>
         </div>
         <div class="surveyRow">
             <div class="labels">
-                <label></label>
+                <label for="comments">Please add any other comments: </label>
             </div>
             <div class="inputs">
-
+                <textarea class="textInput" id="comments" name="comment" placeholder="Enter additional comments here..."></textarea>
             </div>
         </div>
         <div>
@@ -110,7 +149,7 @@
 
 
 
-<!--User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.-->
+<!--User Story #13: Inside the form element, I can select a field from one or more groups of - buttons. Each group should be grouped using the name attribute.-->
 <!--User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.-->
 <!--User Story #15: Inside the form element, I am presented with a textarea at the end  additional comments.-->
 

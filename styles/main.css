@@ -5,11 +5,6 @@ body {
     font-family: "Bodoni MT", sans-serif;
 }
 
-input{
-    height: 25px;
-    width: 80%;
-}
-
 select{
     height: 25px;
 }
@@ -31,20 +26,20 @@ select{
 .inputs{
     width: 50%;
     text-align: left;
-    padding: 10px 20px;
+    padding: 10px 5px;
 }
 
-.selectLabel{
-
+.checkSelect{
+    display: flex;
+    justify-content: flex-start;
+}
+.textInput{
+    height: 25px;
+    width: 80%;
 }
 
-.radio {
-    vertical-align: middle;
-    text-align: left;
-}
-
-.checkbox{
-
+.clickSelector {
+    width: 10%;
 }
 
 #survey-container {
