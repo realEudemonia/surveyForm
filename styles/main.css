@@ -3,10 +3,8 @@ body {
     text-align: center;
     color: white;
     font-family: "Bodoni MT", sans-serif;
-}
-
-select{
-    height: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .surveyRow {
@@ -48,13 +46,27 @@ select{
     margin: auto;
     width: 50%;
     background-color: #1E6666;
-    display: flex;
-    flex-direction: column;
+    min-width: 335px;
  }
 
  #description{
      font-size: 20px;
  }
+
+ #submit{
+     color: white;
+     background-color: #AA6832;
+     height: 35px;
+     width: 15%;
+     border-color: #38393C;
+     border-radius: 20px;
+     margin: 10px;
+ }
+
+ #submit:hover{
+     background-color: #2A4072;
+ }
+
 
 
 
