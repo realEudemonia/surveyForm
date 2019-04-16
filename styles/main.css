@@ -30,6 +30,7 @@ body {
 .checkSelect{
     display: flex;
     justify-content: flex-start;
+
 }
 .textInput{
     height: 25px;
@@ -38,6 +39,7 @@ body {
 
 .clickSelector {
     width: 10%;
+    margin-top: 5px;
 }
 
 #survey-container {
@@ -65,7 +67,14 @@ body {
 
  #submit:hover{
      background-color: #2A4072;
+     cursor: pointer;
  }
+
+ #comments{
+     height: 100px;
+ }
+
+
 
 
 
